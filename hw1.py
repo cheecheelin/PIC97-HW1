@@ -29,7 +29,7 @@ def newton(func,dfunc,x,eps):
 	return xi
 
 
-print newton(f,df,3,0.001)
-print newton (f,df,-0.5,0.001)
-print newton (g,dg,2,0.001)
-print newton (h,dh,1.5,0.001)
+print newton(f,df,3,0.0001)
+print newton (f,df,-0.5,0.0001)
+print newton (g,dg,2,0.0001)
+print newton (h,dh,1.5,0.0001)
