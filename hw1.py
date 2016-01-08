@@ -23,7 +23,7 @@ def newton(func,dfunc,x,eps):
 	xi=x
 	#if magnitude of residual error is less than or equal to eps then done, else calculate correction to guess
 	while abs(func(xi))>eps:
-		xi= xi-(func(xi)/dfunc(xi))
+		xi= xi-float(func(xi)/dfunc(xi))
 		if abs(func(xi)-func(x))<=eps:
 			break
 	return xi
