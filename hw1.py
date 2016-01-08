@@ -24,8 +24,6 @@ def newton(func,dfunc,x,eps):
 	#if magnitude of residual error is less than or equal to eps then done, else calculate correction to guess
 	while math.fabs(func(xi))>eps:
 		xi= xi-float(func(xi)/dfunc(xi))
-		if math.fabs(func(xi)-func(x))<=eps:
-			break
 	return xi
 
 
