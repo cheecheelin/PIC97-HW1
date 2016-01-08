@@ -8,7 +8,7 @@ import math
 def f(x):
 	return x**2-1
 def df(x):
-	return 2*x-1
+	return (2*x)
 def g(x):
 	return math.sin(x)
 def dg(x):
